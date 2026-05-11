@@ -7,7 +7,6 @@ import React, { useEffect, useState } from "react";
 import { Logo } from "../ui/Logo";
 import { MobileNav } from "./MobileNav";
 
-
 export const Navbar: React.FC = () => {
   const [isScrolled, setIsScrolled] = useState<boolean>(false);
   const [isMobileMenuIsOpen, setIsMobileMenuIsOpen] = useState<boolean>(false);
@@ -86,7 +85,7 @@ export const Navbar: React.FC = () => {
         </div>
 
         <button
-          className="lg:hidden"
+          className="cursor-pointer lg:hidden"
           onClick={() => setIsMobileMenuIsOpen((prev) => !prev)}
         >
           {isMobileMenuIsOpen ? <X size={30} /> : <Menu size={30} />}

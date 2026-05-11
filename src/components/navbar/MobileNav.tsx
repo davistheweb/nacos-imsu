@@ -3,7 +3,7 @@ import { navItems } from "@/data";
 import { AnimatePresence, motion } from "framer-motion";
 import { ChevronDown } from "lucide-react";
 import Link from "next/link";
-import React, { useState } from "react";
+import React, { useEffect, useRef, useState } from "react";
 
 export const MobileNav: React.FC<{
   isMobileMenuIsOpen: boolean;
@@ -11,17 +11,33 @@ export const MobileNav: React.FC<{
 }> = ({ isMobileMenuIsOpen, setMobileMenuIsOpen }) => {
   const [openAccordion, setOpenAccordion] = useState<string | null>(null);
 
+  const MobileNavRef = useRef<HTMLDivElement | null>(null);
+
+  useEffect(() => {
+    const handleOutsideClick = (e: MouseEvent) => {
+      if (
+        MobileNavRef.current &&
+        !MobileNavRef.current.contains(e.target as Node)
+      )
+        setMobileMenuIsOpen(false);
+    };
+    document.addEventListener("click", handleOutsideClick);
+
+    return () => document.removeEventListener("click", handleOutsideClick);
+  }, [isMobileMenuIsOpen, setMobileMenuIsOpen]);
+
   const toogleAccordin = (title: string) => {
     setOpenAccordion(openAccordion === title ? null : title);
   };
   return (
     <AnimatePresence>
       {isMobileMenuIsOpen && (
-        <div className=" inset-0 z-[40] h-fit w-full shadow-sm  lg:hidden bg-red-500">
+        <div className="fixed top-34 z-40 h-fit w-full bg-white shadow-sm lg:hidden">
           <motion.div
             initial={{ opacity: 0, y: -20 }}
             animate={{ opacity: 1, y: 0 }}
             exit={{ opacity: 0, y: -20 }}
+            ref={MobileNavRef}
           >
             <div className="flex w-full flex-col p-8">
               <ul className="flex w-full flex-col gap-6">
@@ -37,7 +53,7 @@ export const MobileNav: React.FC<{
                           onClick={() => {
                             toogleAccordin(item.title);
                           }}
-                          className={`transition-transform duration-300 ${openAccordion === item.title ? "rotate-180" : ""}`}
+                          className={`cursor-pointer transition-transform duration-300 ${openAccordion === item.title ? "rotate-180" : ""}`}
                         />
                       )}
                     </div>

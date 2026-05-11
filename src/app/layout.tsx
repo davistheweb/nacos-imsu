@@ -23,9 +23,7 @@ export default function RootLayout({
       <body className="relative flex min-h-full flex-col">
         <QuickContact />
         <Navbar />
-        {
-         children
-        }
+        {children}
       </body>
     </html>
   );
