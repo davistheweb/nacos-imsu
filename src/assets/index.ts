@@ -1,3 +1,3 @@
 import NacosImsuLogo from "./general/nacos-imsu_logo.png";
-
-export { NacosImsuLogo };
+import NacosLogo from "./home/NacosLogo.jpg";
+export { NacosImsuLogo, NacosLogo };

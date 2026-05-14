@@ -1,4 +1,4 @@
-import { Poppins, Rubik } from "next/font/google";
+import { Nunito, Poppins, Rubik } from "next/font/google";
 
 const poppinsFont = Poppins({
   variable: "--font-poppins",
@@ -11,4 +11,10 @@ const rubikFont = Rubik({
   subsets: ["latin"],
 });
 
-export { poppinsFont, rubikFont };
+const nunitoFont = Nunito({
+  variable: "--font-nunito",
+  subsets: ["latin"],
+  weight: ["200", "300", "400", "500", "600", "700", "800", "900"],
+});
+
+export { nunitoFont, poppinsFont, rubikFont };
