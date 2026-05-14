@@ -76,7 +76,7 @@ export const About: React.FC = () => {
         </div>
       </div>
 
-      <div className="min-w-[350px] lg:min-w-150">
+      <div className="min-w-87.5 lg:min-w-150">
         <Image
           src={NacosLogo}
           alt="nacos logo"
