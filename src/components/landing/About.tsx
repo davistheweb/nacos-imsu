@@ -5,7 +5,7 @@ import Image from "next/image";
 import React from "react";
 
 export const About: React.FC = () => (
-  <section className="flex flex-col items-center justify-center gap-5 px-8 py-20 lg:flex-row">
+  <section className="flex flex-col items-center justify-center gap-5 px-10 py-20 lg:flex-row">
     <div className="flex flex-col gap-8 lg:max-w-175">
       <div className="st-post-run-ani relative flex flex-col gap-2 py-4">
         <h1 className="text-custom-green text-xl font-semibold">ABOUT US</h1>

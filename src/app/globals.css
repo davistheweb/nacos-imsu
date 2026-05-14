@@ -175,7 +175,7 @@
   height: 5px;
   background-color: white;
   border-radius: 2px;
-  animation: run-animation 2s infinite linear;
+  animation: run-animation 5s infinite linear;
   z-index: 2;
 }
 
@@ -200,7 +200,7 @@
   height: 5px;
   background-color: white;
   border-radius: 2px;
-  animation: run-animation 2s infinite linear;
+  animation: run-animation 5s infinite linear;
   z-index: 2;
 }
 
