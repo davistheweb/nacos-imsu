@@ -32,7 +32,7 @@ export const MobileNav: React.FC<{
   return (
     <AnimatePresence>
       {isMobileMenuIsOpen && (
-        <div className="fixed top-34 z-40 h-fit w-full bg-white shadow-sm lg:hidden">
+        <div className="fixed top-29.5 z-40 h-fit w-full bg-white shadow-sm lg:hidden">
           <motion.div
             initial={{ opacity: 0, y: -20 }}
             animate={{ opacity: 1, y: 0 }}
@@ -47,7 +47,12 @@ export const MobileNav: React.FC<{
                     className="flex flex-col border-b border-white/10 pb-6"
                   >
                     <div className="flex w-full items-center justify-between">
-                      <Link href={item.link}>{item.title}</Link>
+                      <Link
+                        href={item.link}
+                        onClick={() => setMobileMenuIsOpen(false)}
+                      >
+                        {item.title}
+                      </Link>
                       {item.dropdownItems && (
                         <ChevronDown
                           onClick={() => {
@@ -72,6 +77,7 @@ export const MobileNav: React.FC<{
                                   key={subItem.title}
                                   href={subItem.link}
                                   className="flex items-center p-2"
+                                  onClick={() => setMobileMenuIsOpen(false)}
                                 >
                                   {subItem.title}
                                 </Link>

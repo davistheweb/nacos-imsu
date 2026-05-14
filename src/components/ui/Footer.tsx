@@ -7,7 +7,7 @@ import Link from "next/link";
 import React from "react";
 
 export const Footer: React.FC = () => (
-  <footer className="md:gird-cols-2 grid w-full grid-cols-1 justify-items-center gap-5 bg-black px-10 py-10 lg:grid-cols-3">
+  <footer className="md:grid-cols-2 grid w-full grid-cols-1 lg:justify-items-center gap-5 bg-black px-10 py-10 lg:grid-cols-3">
     <div className="flex flex-col gap-4">
       <div className="max-h-50 max-w-50">
         <Image
