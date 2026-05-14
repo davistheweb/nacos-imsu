@@ -3,6 +3,7 @@ import { navItems } from "@/data";
 import { rubikFont } from "@/lib/font";
 import { ChevronDown, Menu, X } from "lucide-react";
 import Link from "next/link";
+import { usePathname } from "next/navigation";
 import React, { useEffect, useState } from "react";
 import { Logo } from "../ui/Logo";
 import { MobileNav } from "./MobileNav";
@@ -10,6 +11,8 @@ import { MobileNav } from "./MobileNav";
 export const Navbar: React.FC = () => {
   const [isScrolled, setIsScrolled] = useState<boolean>(false);
   const [isMobileMenuIsOpen, setIsMobileMenuIsOpen] = useState<boolean>(false);
+
+  const pathName = usePathname();
 
   useEffect(() => {
     const handleScroll = () => {
@@ -27,13 +30,17 @@ export const Navbar: React.FC = () => {
     return () => window.removeEventListener("scroll", handleScroll);
   }, []);
 
+  const isActive = (href: string) => href === pathName;
+
   return (
     <>
       <nav
-        className={`fixed flex w-full justify-between px-8 transition-all duration-300 ${isScrolled ? "top-0 bg-white" : "top-10 bg-transparent"} py-6`}
+        className={`transition-top fixed flex w-full justify-between px-8 duration-200 ${isScrolled ? "top-0 bg-white" : "top-9 border-b border-white/20 bg-transparent"} z-50 py-6`}
       >
         <div className="flex">
-          <Logo />
+          <Logo
+            textClassName={`${isScrolled ? "text-custom-green" : "text-white"}`}
+          />
         </div>
 
         <div className="h-ful hidden items-center gap-5 lg:flex">
@@ -45,9 +52,9 @@ export const Navbar: React.FC = () => {
               >
                 <Link
                   href={link}
-                  className="inline-flex gap-1"
+                  className={`inline-flex gap-1 hover:text-[#138601] ${isScrolled ? `${isActive(link) ? "text-[#138601]" : "text-black"}` : `${isActive(link) ? "text-[#138601]" : "text-white"}`}`}
                 >
-                  {title}{" "}
+                  {title}
                   {dropdownItems && (
                     <ChevronDown className="opacity-80 transition-all group-hover/nav:rotate-180" />
                   )}
@@ -62,7 +69,7 @@ export const Navbar: React.FC = () => {
                         >
                           <Link
                             href={item.link}
-                            className={`${rubikFont.className} w-full px-4 py-2 text-black transition-all duration-300 group-hover/item:bg-[#eef9ff] group-hover/item:text-green-400`}
+                            className={`${rubikFont.className} group-hover/item:text-custom-green w-full px-4 py-2 text-black transition-all duration-300 group-hover/item:bg-[#eef9ff]`}
                           >
                             {item.title}
                           </Link>
@@ -77,7 +84,7 @@ export const Navbar: React.FC = () => {
           <div className="hidden lg:flex">
             <Link
               href="/contact"
-              className="cursor-pointer rounded-sm bg-green-500 px-4 py-2 font-medium text-white uppercase"
+              className="bg-custom-green cursor-pointer rounded-sm px-4 py-2 font-medium text-white uppercase"
             >
               Contact
             </Link>
@@ -88,7 +95,17 @@ export const Navbar: React.FC = () => {
           className="cursor-pointer lg:hidden"
           onClick={() => setIsMobileMenuIsOpen((prev) => !prev)}
         >
-          {isMobileMenuIsOpen ? <X size={30} /> : <Menu size={30} />}
+          {isMobileMenuIsOpen ? (
+            <X
+              size={30}
+              color={isScrolled ? "black" : "white"}
+            />
+          ) : (
+            <Menu
+              color={isScrolled ? "black" : "white"}
+              size={30}
+            />
+          )}
         </button>
       </nav>
       <MobileNav

@@ -1,10 +1,13 @@
 import { NacosImsuLogo } from "@/assets";
 import { poppinsFont } from "@/lib/font";
+import { cn } from "@/lib/utils";
 import Image from "next/image";
 import Link from "next/link";
 import React from "react";
 
-export const Logo: React.FC = () => (
+export const Logo: React.FC<{ textClassName?: string }> = ({
+  textClassName,
+}) => (
   <div>
     <Link
       href="/"
@@ -18,10 +21,14 @@ export const Logo: React.FC = () => (
         draggable={false}
       />
       <div className="flex flex-col">
-        <span className={`${poppinsFont.className} font-bold md:text-[20px]`}>
+        <span
+          className={`${poppinsFont.className} font-bold md:text-[20px] ${cn(textClassName)}`}
+        >
           NACOS
         </span>
-        <span className={`${poppinsFont.className} font-bold md:text-[20px]`}>
+        <span
+          className={`${poppinsFont.className} font-bold md:text-[20px] ${cn(textClassName)}`}
+        >
           IMSU CHAPTER
         </span>
       </div>
