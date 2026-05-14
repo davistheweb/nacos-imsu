@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 
 import { Navbar } from "@/components/navbar";
+import { Footer } from "@/components/ui/Footer";
 import { QuickContact } from "@/components/ui/QuickContact";
 import { poppinsFont } from "@/lib/font";
 import { cn } from "@/lib/utils";
@@ -34,6 +35,7 @@ export default function RootLayout({
         <QuickContact />
         <Navbar />
         {children}
+        <Footer />
       </body>
     </html>
   );

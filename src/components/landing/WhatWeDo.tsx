@@ -45,6 +45,7 @@ export const WhatWeDo: React.FC = () => {
           <Image
             src={NacosLogo}
             alt="nacos logo"
+            draggable={false}
           />
         </div>
         <div className="flex flex-col gap-6 py-2">
