@@ -22,6 +22,8 @@ declare global {
     title: string;
     desc: string;
   }
+
+  type TCurrentPurposeTab = "mission-tab" | "objectives-tab";
 }
 
 export {};
