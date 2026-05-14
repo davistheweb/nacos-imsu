@@ -42,4 +42,9 @@ const WhatWeDoList: IWhatWeDoList[] = [
   },
 ];
 
-export { navItems, WhatWeDoList };
+const FooterQuickLinks: IFooterQuickLinks[] = navItems.flatMap((quickLinks) => [
+  { title: quickLinks.title, link: quickLinks.link },
+  ...(quickLinks.dropdownItems || []),
+]);
+
+export { FooterQuickLinks, navItems, WhatWeDoList };

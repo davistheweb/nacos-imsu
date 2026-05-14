@@ -15,6 +15,8 @@ declare global {
     }[];
   }
 
+  interface IFooterQuickLinks extends INavItems {}
+
   interface IWhatWeDoList {
     Icon: IconType;
     title: string;
