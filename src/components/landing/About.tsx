@@ -7,8 +7,8 @@ import React from "react";
 export const About: React.FC = () => (
   <section className="flex flex-col items-center justify-center gap-5 px-8 py-20 lg:flex-row">
     <div className="flex flex-col gap-8 lg:max-w-175">
-      <div className="flex flex-col gap-2">
-        <h1 className="text-xl font-semibold text-[#138601]">ABOUT US</h1>
+      <div className="st-post-run-ani relative flex flex-col gap-2 py-4">
+        <h1 className="text-custom-green text-xl font-semibold">ABOUT US</h1>
         <h1
           className={`${nunitoFont.className} text-xl font-extrabold md:text-4xl`}
         >
@@ -55,7 +55,7 @@ export const About: React.FC = () => (
         ))}
       </div>
       <div className="flex gap-10">
-        <div className="flex h-15 w-15 items-center justify-center rounded-sm bg-[#138601] transition-all duration-500 hover:translate-x-5">
+        <div className="bg-custom-green flex h-15 w-15 items-center justify-center rounded-sm transition-all duration-500 hover:translate-x-5">
           <Phone
             fill="white"
             color="white"
@@ -67,7 +67,7 @@ export const About: React.FC = () => (
             For enquiries, call:
           </h3>
           <h3
-            className={`md:text-2xl ${nunitoFont.className} font-bold text-[#138601]`}
+            className={`md:text-2xl ${nunitoFont.className} text-custom-green font-bold`}
           >
             +234 907 662 6835
           </h3>
