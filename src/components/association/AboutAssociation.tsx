@@ -1,10 +1,9 @@
 import { NacosLogo } from "@/assets";
 import { nunitoFont } from "@/lib/font";
-import { Check, Phone } from "lucide-react";
 import Image from "next/image";
 import React from "react";
 
-export const About: React.FC = () => (
+export const AboutAssociation: React.FC = () => (
   <section className="flex flex-col items-center justify-center gap-5 px-10 py-20 lg:flex-row">
     <div className="flex flex-col gap-8 lg:max-w-175">
       <div className="st-post-run-ani relative flex flex-col gap-2 py-4">
@@ -12,26 +11,34 @@ export const About: React.FC = () => (
         <h1
           className={`${nunitoFont.className} text-xl font-extrabold md:text-4xl`}
         >
-          An Insight Into One of NACOS' Most Structured Student Bodies.
+          An Insight Into One of NACOS' Most Structured Student Bodies
         </h1>
       </div>
       <div className="flex flex-col gap-5">
         <p className="text-[#6b6a75]">
-          Nigeria Association of Computing Students, Imo State University
+          The Nigeria Association of Computing Students, Imo State University
           Chapter (NACOS-IMSU) is the umbrella body for students studying
           Computer Science in Imo State University, Owerri. <br /> The
-          association has been in existence for over two decades and in that
-          time span NACOS-IMSU has been the bench mark for several technological
-          advancement initiatives both within and outside the university
-          environment.
+          association has been in existence for over two decades and is one of
+          the local chapters under the Nigeria Association of Computing Students
+          (NACOS), which was established in July 1993 by a consortium of
+          students under the name Nigeria Association of Computer Science
+          Students (NACOSS), with the endorsement of the Nigeria Computer
+          Society (NCS) as its parent organization.
         </p>
         <p className="text-[#6b6a75]">
-          With a membership strength of about One Thousand (1,000) students,
-          NACOS IMSU sits as one of the largest and most organized NACOS
-          Chapters both at the South East and National landscape.
+          NACOS IMSU serves as a dedicated platform for tech-inclined students
+          engaged in various IT-related fields to collectively address and
+          formulate policies geared towards advanced computing in a coordinated
+          and structured manner.
+        </p>
+        <p className="text-[#6b6a75]">
+          With a substantial membership strength of over one thousand registered
+          members, NACOS IMSU asserts itself as one of the largest and most
+          coordinated chapters under NACOS.
         </p>
       </div>
-      <div className="grid w-fit gap-x-10 gap-y-4 sm:grid-cols-2">
+      {/* <div className="grid w-fit gap-x-10 gap-y-4 sm:grid-cols-2">
         {[
           "Professional Certifications",
           "Technical Access",
@@ -72,7 +79,7 @@ export const About: React.FC = () => (
             +234 907 662 6835
           </h3>
         </div>
-      </div>
+      </div> */}
     </div>
 
     <div className="min-w-87.5 lg:min-w-150">
