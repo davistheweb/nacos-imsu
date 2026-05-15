@@ -24,16 +24,16 @@ export const Hero: React.FC = () => {
             <h1
               className={`text-center font-extrabold text-white md:w-200 md:text-7xl ${rubikFont.className}`}
             >
-              Nigeria Association Of Computing Students
+              Towards Advanced Computing
             </h1>
-            <h1
+            {/* <h1
               className={`text-custom-green text-center font-extrabold md:w-200 lg:text-7xl ${rubikFont.className}`}
             >
               IMSU Chapter
-            </h1>
+            </h1> */}
             <p className="w-60 text-center text-white md:w-full md:text-xl">
-              We are student IT professionals passionate for groundbreaking
-              technologu innovations.
+              We are student IT Professionals passionate for groundbreaking
+              technology innovations.
             </p>
           </div>
         </CarouselItem>

@@ -1,19 +1,19 @@
-import { NacosImsuLogo } from "@/assets";
 import { FooterQuickLinks } from "@/data";
 import { nunitoFont, rubikFont } from "@/lib/font";
 import { Mail, MapPin, MoveRight, Phone } from "lucide-react";
-import Image from "next/image";
 import Link from "next/link";
 import React from "react";
+import { Logo } from "./Logo";
 
 export const Footer: React.FC = () => (
   <footer className="grid w-full grid-cols-1 gap-5 bg-black px-10 py-10 md:grid-cols-2 lg:grid-cols-3 lg:justify-items-center">
     <div className="flex flex-col gap-4">
-      <div className="max-h-50 max-w-50">
-        <Image
+      <div className="">
+        {/* <Image
           src={NacosImsuLogo}
           alt="naocs logo"
-        />
+        /> */}
+        <Logo textClassName="text-white" />
       </div>
       <p className={`${rubikFont.className} text-white`}>
         Nigeria Association of Computing Students (NACOS)
@@ -75,11 +75,11 @@ export const Footer: React.FC = () => (
             color="#138601"
           />
           <a
-            href="tel:+2349076626835"
+            href="tel:+2349018797128"
             target="_blank"
             className={`${rubikFont.className} text-custom-green`}
           >
-            +2349076626835
+            +2349018797128
           </a>
         </div>
         <div className="flex gap-2">

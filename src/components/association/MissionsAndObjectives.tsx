@@ -14,7 +14,7 @@ export const MissionsAndObjectives: React.FC = () => {
     <section className="flex flex-col items-center justify-center gap-10 px-10 py-20">
       <div className="center-post-run-ani relative flex flex-col gap-2 py-4">
         <h1
-          className={`${nunitoFont.className} text-xl font-extrabold md:text-4xl`}
+          className={`${nunitoFont.className} text-center text-xl font-extrabold md:text-4xl`}
         >
           OUR MISSION AND OBJECTIVES
         </h1>
