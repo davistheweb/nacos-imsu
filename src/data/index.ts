@@ -1,3 +1,19 @@
+import {
+  AvatarImage,
+  ComrChikezieJane,
+  ComrChilakaEmmanuel,
+  ComrChinekeDennis,
+  ComrEjimoforCollette,
+  ComrFredricksFred,
+  ComrIbawuchMatthew,
+  ComrIbehAmaka,
+  ComrIwuAugustina,
+  ComrJosiahDavis,
+  ComrMegwaStanley,
+  ComrNwanagaAugustine,
+  ComrOnyeaghalaEmmanuel,
+  ComrOnyekaBlessing,
+} from "@/assets";
 import { Book, Laptop, Presentation } from "lucide-react";
 
 const navItems: INavItems[] = [
@@ -13,6 +29,14 @@ const navItems: INavItems[] = [
         title: "Association",
         link: "/association",
       },
+      {
+        title: "Past Patrons",
+        link: "/past-patrons",
+      },
+      {
+        title: "Executives",
+        link: "/executives",
+      },
       // { title: "NACOS Chapters (Annual Dues 2025/2026)", link: "#" },
     ],
   },
@@ -21,7 +45,7 @@ const navItems: INavItems[] = [
     link: "/events",
   },
   { title: "Gallery", link: "/gallery" },
-  { title: "Blog", link: "/blog" },
+  // { title: "Blog", link: "/blog" },
 ];
 
 const WhatWeDoList: IWhatWeDoList[] = [
@@ -47,4 +71,118 @@ const FooterQuickLinks: IFooterQuickLinks[] = navItems.flatMap((quickLinks) => [
   ...(quickLinks.dropdownItems || []),
 ]);
 
-export { FooterQuickLinks, navItems, WhatWeDoList };
+const PastPartonsList: IPastPartonsList[] = [
+  {
+    name: "Comr. Asodike Kelechi Thank God (Kaycee)",
+    timeline: "15th Republic",
+    image: AvatarImage,
+  },
+  {
+    name: "Comr. Onyiriofor Nzubechi Edison (Zubby)",
+    timeline: "16th Republic",
+    image: AvatarImage,
+  },
+  {
+    name: "Comr. Onwuachu Chukwuemeka Augustine (Empire)",
+    timeline: "17th Republic",
+    image: AvatarImage,
+  },
+  {
+    name: "Comr. Uremegbulem Eze Saviour",
+    timeline: "18th Republic",
+    image: AvatarImage,
+  },
+  {
+    name: "Comr. Ajaereh Uchenna Precious (Santi)",
+    timeline: "19th Republic",
+    image: AvatarImage,
+  },
+  {
+    name: "Comr. Orji Samuel Uchenna",
+    timeline: "20th Republic",
+    image: AvatarImage,
+  },
+  {
+    name: "Comr. Chinke Dennis Chijindu",
+    timeline: "21st Republic",
+    image: ComrChinekeDennis,
+  },
+];
+
+const ExecutivesCouncilList: IExecutivesCouncilList[] = [
+  {
+    name: "Comr. Chinke Dennis Chijindu",
+    position: "President",
+    image: ComrChinekeDennis,
+  },
+  {
+    name: "Comr. Iwu Augustina Chizoba",
+    position: "Vice President",
+    image: ComrIwuAugustina,
+  },
+  {
+    name: "Comr. Josiah Davis Chimzuruoke",
+    position: "Director of ICT",
+    image: ComrJosiahDavis,
+  },
+  {
+    name: "Comr. Onyeka Blessing Nkeiruka",
+    position: "Secretary-General",
+    image: ComrOnyekaBlessing,
+  },
+  {
+    name: "Comr. Fredricks Fredrick O.",
+    position: "Asst. Secretary-General",
+    image: ComrFredricksFred,
+  },
+
+  {
+    name: "Comr. Ibeh Amaka Genevieve",
+    position: "Director of Finance",
+    image: ComrIbehAmaka,
+  },
+  {
+    name: "Comr. Ibawuchi Matthew C.",
+    position: "Director of Welfare",
+    image: ComrIbawuchMatthew,
+  },
+  {
+    name: "Comr. Nwanaga Augustine C.",
+    position: "Director of Information",
+    image: ComrNwanagaAugustine,
+  },
+  {
+    name: "Comr. Chikezie Jane Ozioma",
+    position: "Director of Sports",
+    image: ComrChikezieJane,
+  },
+  {
+    name: "Comr. Megwa Stanley C.",
+    position: "Asst. Director of Sports",
+    image: ComrMegwaStanley,
+  },
+  {
+    name: "Comr. Ejimofor Collette C.",
+    position: "Director of Socials",
+    image: ComrEjimoforCollette,
+  },
+  {
+    name: "Comr. Chilaka Emmanuel C.",
+    position: "Asst. Director of Socials",
+    image: ComrChilakaEmmanuel,
+  },
+
+  {
+    name: "Comr. Onyeaghala Emmanuel",
+    position: "Public Relations Officer",
+    image: ComrOnyeaghalaEmmanuel,
+  },
+];
+
+export {
+  ExecutivesCouncilList,
+  FooterQuickLinks,
+  navItems,
+  PastPartonsList,
+  WhatWeDoList,
+};

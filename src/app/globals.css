@@ -1,6 +1,7 @@
 @import "tailwindcss";
 @import "tw-animate-css";
 @import "shadcn/tailwind.css";
+@import "animate.css";
 
 @custom-variant dark (&:is(.dark *));
 
@@ -155,6 +156,23 @@
     background-repeat: no-repeat;
     background-size: cover;
   }
+  .past-patrons-bg {
+    background:
+      linear-gradient(#000000b3, #000000b3),
+      url("../assets/about/past-patrons/PastPatronsBg.jpg");
+    background-color: #000000b3;
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+
+  .executives-bg {
+    background:
+      linear-gradient(#000000b3, #000000b3),
+      url("../assets/about/executives/ExecutivesBackground.jpg");
+    background-color: #000000b3;
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
 }
 .text-custom-green {
   color: #138601;
@@ -224,6 +242,22 @@
 
   100% {
     transform: translateX(0);
+  }
+}
+
+.slideInUp {
+  animation-name: slideInUp;
+  animation-delay: 1s;
+  visibility: visible;
+}
+
+@keyframes slideInUp {
+  0% {
+    transform: translate3d(0, 100%, 0);
+    visibility: visible;
+  }
+  100% {
+    transform: translateZ(0);
   }
 }
 

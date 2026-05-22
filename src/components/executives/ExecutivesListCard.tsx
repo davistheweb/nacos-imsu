@@ -1,0 +1,33 @@
+import { nunitoFont, rubikFont } from "@/lib/font";
+import Image from "next/image";
+import React from "react";
+
+export const ExecutivesListCard: React.FC<TExecutivesCouncilListProps> = ({
+  name,
+  position,
+  image,
+}) => (
+  <div className="scaleIn group/scale px-6">
+    <div className="overflow-hidden bg-[#eef9ff]">
+      <div className="flex flex-col gap-3">
+        <div className="h-105 overflow-hidden">
+          <Image
+            src={image}
+            alt="avatar"
+            className="h-full w-full object-cover transition-all duration-300 ease-in group-hover/scale:scale-105"
+          />
+        </div>
+
+        <div className="flex flex-col items-center justify-center gap-2 px-4 py-2">
+          <h1
+            className={`text-custom-green text-xl font-semibold ${nunitoFont.className}`}
+          >
+            {name}
+          </h1>
+
+          <p className={`${rubikFont.className} text-[#6b6a75]`}>{position}</p>
+        </div>
+      </div>
+    </div>
+  </div>
+);

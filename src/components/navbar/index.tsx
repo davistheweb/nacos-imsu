@@ -60,16 +60,16 @@ export const Navbar: React.FC = () => {
                   )}
                 </Link>
                 {dropdownItems && (
-                  <div className="invisible absolute top-full left-0 h-40 w-max translate-y-4 bg-white py-4 opacity-0 shadow-sm transition-all duration-300 group-hover/nav:visible group-hover/nav:translate-y-0 group-hover/nav:opacity-100">
+                  <div className="invisible absolute top-full left-0 h-fit w-max translate-y-4 bg-white py-2 opacity-0 shadow-sm transition-all duration-300 group-hover/nav:visible group-hover/nav:translate-y-0 group-hover/nav:opacity-100">
                     <ul className="flex flex-col gap-3 py-2">
                       {dropdownItems.map((item, _i) => (
                         <li
                           key={_i}
-                          className="group/item flex flex-col gap-3"
+                          className="group/item flex flex-col gap-2"
                         >
                           <Link
                             href={item.link}
-                            className={`${rubikFont.className} group-hover/item:text-custom-green w-full px-4 py-2 text-black transition-all duration-300 group-hover/item:bg-[#eef9ff]`}
+                            className={`${rubikFont.className} group-hover/item:text-custom-green w-full px-4 py-0.5 text-black transition-all duration-300 group-hover/item:bg-[#eef9ff]`}
                           >
                             {item.title}
                           </Link>
