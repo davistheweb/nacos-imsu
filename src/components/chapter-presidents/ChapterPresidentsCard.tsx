@@ -10,7 +10,7 @@ export const ChapterPresidentsCard: React.FC<TChapterPresidentsListProps> = ({
   <div className="scaleIn group/scale px-6">
     <div className="bg-[#eef9ff]">
       <div className="flex flex-col gap-3">
-        <div className="overflow-hidden">
+        <div className="overflow-hidden h-87.5">
           <Image
             src={image}
             alt="avatar"
