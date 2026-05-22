@@ -19,11 +19,13 @@ export const PastPatronsCard: React.FC<TPastPatronsListProps> = ({
         </div>
         <div className="flex flex-col items-center justify-center gap-2 px-4 py-2">
           <h1
-            className={`text-custom-green text-xl font-semibold ${nunitoFont.className}`}
+            className={`text-custom-green text-center text-xl font-semibold ${nunitoFont.className}`}
           >
             {name}
           </h1>
-          <p className={`${rubikFont.className} text-[#6b6a75]`}>{timeline}</p>
+          <p className={`${rubikFont.className} text-center text-[#6b6a75]`}>
+            {timeline}
+          </p>
         </div>
       </div>
     </div>
