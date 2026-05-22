@@ -76,37 +76,37 @@ const FooterQuickLinks: IFooterQuickLinks[] = navItems.flatMap((quickLinks) => [
 
 const ChapterPresidentsList: IChapterPresidentsList[] = [
   {
-    name: "Comr. Asodike Kelechi Thank God",
+    name: "Comr. Asodike Kelechi Thank God, OCS",
     timeline: "15th Republic",
     image: AvatarImage,
   },
   {
-    name: "Comr. Onyiriofor Nzubechi Edison",
+    name: "Comr. Onyiriofor Nzubechi Edison, OCS",
     timeline: "16th Republic",
     image: ComrOnyirioforNzubechi,
   },
   {
-    name: "Comr. Onwuachu Chukwuemeka Augustine (Empire)",
+    name: "Comr. Onwuachu Chukwuemeka Augustine, OCS",
     timeline: "17th Republic",
     image: AvatarImage,
   },
   {
-    name: "Comr. Uremegbulem Eze Saviour",
+    name: "Comr. Uremegbulem Eze Saviour, OCS",
     timeline: "18th Republic",
     image: ComrUremegbulemEze,
   },
   {
-    name: "Comr. Ajaereh Uchenna Precious (Santi)",
+    name: "Comr. Ajaereh Uchenna Precious, OCS",
     timeline: "19th Republic",
     image: ComrAjaerehUchenna,
   },
   {
-    name: "Comr. Orji Samuel Uchenna",
+    name: "Comr. Orji Samuel Uchenna, OCS",
     timeline: "20th Republic",
     image: AvatarImage,
   },
   {
-    name: "Comr. Chinke Dennis Chijindu",
+    name: "Comr. Chinke Dennis Chijindu, OCS",
     timeline: "21st Republic",
     image: ComrChinekeDennis,
   },
