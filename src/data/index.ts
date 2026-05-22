@@ -1,5 +1,6 @@
 import {
   AvatarImage,
+  ComrAjaerehUchenna,
   ComrChikezieJane,
   ComrChilakaEmmanuel,
   ComrChinekeDennis,
@@ -13,6 +14,8 @@ import {
   ComrNwanagaAugustine,
   ComrOnyeaghalaEmmanuel,
   ComrOnyekaBlessing,
+  ComrOnyirioforNzubechi,
+  ComrUremegbulemEze,
 } from "@/assets";
 import { Book, Laptop, Presentation } from "lucide-react";
 
@@ -73,14 +76,14 @@ const FooterQuickLinks: IFooterQuickLinks[] = navItems.flatMap((quickLinks) => [
 
 const ChapterPresidentsList: IChapterPresidentsList[] = [
   {
-    name: "Comr. Asodike Kelechi Thank God (Kaycee)",
+    name: "Comr. Asodike Kelechi Thank God",
     timeline: "15th Republic",
     image: AvatarImage,
   },
   {
-    name: "Comr. Onyiriofor Nzubechi Edison (Zubby)",
+    name: "Comr. Onyiriofor Nzubechi Edison",
     timeline: "16th Republic",
-    image: AvatarImage,
+    image: ComrOnyirioforNzubechi,
   },
   {
     name: "Comr. Onwuachu Chukwuemeka Augustine (Empire)",
@@ -90,12 +93,12 @@ const ChapterPresidentsList: IChapterPresidentsList[] = [
   {
     name: "Comr. Uremegbulem Eze Saviour",
     timeline: "18th Republic",
-    image: AvatarImage,
+    image: ComrUremegbulemEze,
   },
   {
     name: "Comr. Ajaereh Uchenna Precious (Santi)",
     timeline: "19th Republic",
-    image: AvatarImage,
+    image: ComrAjaerehUchenna,
   },
   {
     name: "Comr. Orji Samuel Uchenna",

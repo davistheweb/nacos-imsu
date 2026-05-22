@@ -6,7 +6,9 @@ import { ExecutivesListCard } from "./ExecutivesListCard";
 export const ExecutivesList: React.FC = () => (
   <section className="flex flex-col items-center justify-center px-4 py-20 md:px-10">
     <div className="center-post-run-ani relative flex flex-col items-center justify-center gap-2 py-4">
-      <h1 className="text-custom-green text-2xl font-semibold">Meet the Team</h1>
+      <h1 className="text-custom-green text-2xl font-semibold">
+        Meet the Team
+      </h1>
       <h1
         className={`${nunitoFont.className} text-center text-2xl font-extrabold md:text-4xl`}
       >

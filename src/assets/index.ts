@@ -1,3 +1,6 @@
+import ComrAjaerehUchenna from "./about/chapter-presidents/ComrAjaerehUchenna.jpg";
+import ComrOnyirioforNzubechi from "./about/chapter-presidents/ComrOnyirioforNzubechi.jpg";
+import ComrUremegbulemEze from "./about/chapter-presidents/ComrUremegbulemEze.jpg";
 import AvatarImage from "./about/executives/avatarImage.jpg";
 import ComrChikezieJane from "./about/executives/ComrChikezieJane.jpg";
 import ComrChilakaEmmanuel from "./about/executives/ComrChilakaEmmanuel.png";
@@ -16,6 +19,7 @@ import NacosImsuLogo from "./general/nacos-imsu_logo.png";
 import NacosLogo from "./general/NacosLogo.jpg";
 export {
   AvatarImage,
+  ComrAjaerehUchenna,
   ComrChikezieJane,
   ComrChilakaEmmanuel,
   ComrChinekeDennis,
@@ -29,6 +33,8 @@ export {
   ComrNwanagaAugustine,
   ComrOnyeaghalaEmmanuel,
   ComrOnyekaBlessing,
+  ComrOnyirioforNzubechi,
+  ComrUremegbulemEze,
   NacosImsuLogo,
   NacosLogo,
 };
