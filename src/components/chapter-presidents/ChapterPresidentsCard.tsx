@@ -2,7 +2,7 @@ import { nunitoFont, rubikFont } from "@/lib/font";
 import Image from "next/image";
 import React from "react";
 
-export const PastPatronsCard: React.FC<TPastPatronsListProps> = ({
+export const ChapterPresidentsCard: React.FC<TChapterPresidentsListProps> = ({
   name,
   timeline,
   image,

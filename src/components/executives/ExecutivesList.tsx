@@ -10,7 +10,7 @@ export const ExecutivesList: React.FC = () => (
       <h1
         className={`${nunitoFont.className} text-center text-xl font-extrabold md:text-4xl`}
       >
-        21th Executives Council
+        21st Republic Executive Council
       </h1>
     </div>
     <div className="grid grid-cols-1 gap-8 py-10 md:grid-cols-2 lg:grid-cols-3">

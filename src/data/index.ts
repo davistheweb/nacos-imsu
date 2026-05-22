@@ -30,12 +30,12 @@ const navItems: INavItems[] = [
         link: "/association",
       },
       {
-        title: "Past Patrons",
-        link: "/past-patrons",
+        title: "Chapter Presidents",
+        link: "/chapter-presidents",
       },
       {
-        title: "Executives",
-        link: "/executives",
+        title: "Executive Council",
+        link: "/executives-council",
       },
       // { title: "NACOS Chapters (Annual Dues 2025/2026)", link: "#" },
     ],
@@ -71,7 +71,7 @@ const FooterQuickLinks: IFooterQuickLinks[] = navItems.flatMap((quickLinks) => [
   ...(quickLinks.dropdownItems || []),
 ]);
 
-const PastPartonsList: IPastPartonsList[] = [
+const ChapterPresidentsList: IChapterPresidentsList[] = [
   {
     name: "Comr. Asodike Kelechi Thank God (Kaycee)",
     timeline: "15th Republic",
@@ -111,7 +111,7 @@ const PastPartonsList: IPastPartonsList[] = [
 
 const ExecutivesCouncilList: IExecutivesCouncilList[] = [
   {
-    name: "Comr. Chinke Dennis Chijindu",
+    name: "Comr. Chinke Dennis Chijindu, OCS",
     position: "President",
     image: ComrChinekeDennis,
   },
@@ -131,7 +131,7 @@ const ExecutivesCouncilList: IExecutivesCouncilList[] = [
     image: ComrOnyekaBlessing,
   },
   {
-    name: "Comr. Fredricks Fredrick O.",
+    name: "Comr. Fredricks Fredrick Obioma",
     position: "Asst. Secretary-General",
     image: ComrFredricksFred,
   },
@@ -142,12 +142,12 @@ const ExecutivesCouncilList: IExecutivesCouncilList[] = [
     image: ComrIbehAmaka,
   },
   {
-    name: "Comr. Ibawuchi Matthew C.",
+    name: "Comr. Ibawuchi Matthew Chukwuebuka",
     position: "Director of Welfare",
     image: ComrIbawuchMatthew,
   },
   {
-    name: "Comr. Nwanaga Augustine C.",
+    name: "Comr. Nwanaga Augustine Chidera.",
     position: "Director of Information",
     image: ComrNwanagaAugustine,
   },
@@ -157,17 +157,17 @@ const ExecutivesCouncilList: IExecutivesCouncilList[] = [
     image: ComrChikezieJane,
   },
   {
-    name: "Comr. Megwa Stanley C.",
+    name: "Comr. Megwa Stanley Chinaemerem",
     position: "Asst. Director of Sports",
     image: ComrMegwaStanley,
   },
   {
-    name: "Comr. Ejimofor Collette C.",
+    name: "Comr. Ejimofor Collette Chinwemmeri",
     position: "Director of Socials",
     image: ComrEjimoforCollette,
   },
   {
-    name: "Comr. Chilaka Emmanuel C.",
+    name: "Comr. Chilaka Emmanuel Chibuike",
     position: "Asst. Director of Socials",
     image: ComrChilakaEmmanuel,
   },
@@ -180,9 +180,9 @@ const ExecutivesCouncilList: IExecutivesCouncilList[] = [
 ];
 
 export {
+  ChapterPresidentsList,
   ExecutivesCouncilList,
   FooterQuickLinks,
   navItems,
-  PastPartonsList,
   WhatWeDoList,
 };

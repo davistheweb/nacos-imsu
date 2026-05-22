@@ -155,10 +155,10 @@
     background-repeat: no-repeat;
     background-size: cover;
   }
-  .past-patrons-bg {
+  .chapter-presidents-bg {
     background:
       linear-gradient(#000000b3, #000000b3),
-      url("../assets/about/past-patrons/PastPatronsBg.jpg");
+      url("../assets/about/chapter-presidents/ChapterPresidentsBg.jpg");
     background-color: #000000b3;
     background-repeat: no-repeat;
     background-size: cover;

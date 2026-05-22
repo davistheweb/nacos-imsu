@@ -26,13 +26,13 @@ declare global {
 
   type TCurrentPurposeTab = "mission-tab" | "objectives-tab";
 
-  interface IPastPartonsList {
+  interface IChapterPresidentsList {
     name: string;
     timeline: string;
     image: StaticImport;
   }
 
-  type TPastPatronsListProps = IPastPartonsList;
+  type TChapterPresidentsListProps = IChapterPresidentsList;
 
   interface IExecutivesCouncilList {
     name: string;
