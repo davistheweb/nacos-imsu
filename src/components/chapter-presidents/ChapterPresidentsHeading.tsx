@@ -6,7 +6,7 @@ export const ChapterPresidentsHeading: React.FC = () => (
     <h1
       className={`text-white ${nunitoFont.className} text-center text-2xl font-extrabold md:text-5xl`}
     >
-      CHAPTER PRESIDENTS (15TH REPUBLIC TILL DATE)
+      Chapter Presidents (15th Republic Till Date)
     </h1>
   </section>
 );
