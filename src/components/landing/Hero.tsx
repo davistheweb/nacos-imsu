@@ -19,8 +19,8 @@ export const Hero: React.FC = () => {
       className="h-full w-full"
     >
       <CarouselContent>
-        <CarouselItem className="carouselSlide1 flex h-100 items-center justify-center md:h-170">
-          <div className="flex flex-col items-center justify-center gap-2">
+        <CarouselItem className="carouselSlide1 flex h-70 items-center justify-center md:h-170 lg:h-100">
+          <div className="flex flex-col items-center justify-center gap-1">
             <h1
               className={`text-center font-extrabold text-white md:w-200 md:text-7xl ${rubikFont.className}`}
             >
@@ -37,8 +37,8 @@ export const Hero: React.FC = () => {
             </p>
           </div>
         </CarouselItem>
-        <CarouselItem className="carouselSlide2 flex h-100 items-center justify-center md:h-170">
-          <div className="flex flex-col items-center justify-center gap-2">
+        <CarouselItem className="carouselSlide2 flex h-70 lg:h-100 items-center justify-center md:h-170">
+          <div className="flex flex-col items-center justify-center gap-1">
             <h1
               className={`text-center text-2xl font-extrabold text-white md:w-200 md:text-7xl ${rubikFont.className}`}
             >
