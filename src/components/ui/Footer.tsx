@@ -13,7 +13,7 @@ export const Footer: React.FC = () => (
           src={NacosImsuLogo}
           alt="naocs logo"
         /> */}
-        <Logo textClassName="text-white" />
+        <Logo />
       </div>
       <p className={`${rubikFont.className} text-white`}>
         Nigeria Association of Computing Students (NACOS)
