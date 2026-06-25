@@ -6,6 +6,7 @@ import {
 } from "@/components/ui/carousel";
 import { rubikFont } from "@/lib/font";
 import Autoplay from "embla-carousel-autoplay";
+import { motion } from "framer-motion";
 import { ChevronLeft, ChevronRight } from "lucide-react";
 import React, { useState } from "react";
 
@@ -19,35 +20,51 @@ export const Hero: React.FC = () => {
       className="h-full w-full"
     >
       <CarouselContent>
-        <CarouselItem className="carouselSlide1 flex h-80 items-center justify-center md:h-170 lg:h-100">
+        <CarouselItem className="carouselSlide1 flex h-70 items-center justify-center md:h-170">
           <div className="flex flex-col items-center justify-center gap-1">
-            <h1
+            <motion.h1
               className={`text-center font-extrabold text-white md:w-200 md:text-7xl ${rubikFont.className}`}
+              initial={{ opacity: 0, y: -40 }}
+              animate={{ opacity: 1, y: 0 }}
+              transition={{ duration: 0.8, ease: "easeIn" }}
             >
               Towards Advanced Computing
-            </h1>
+            </motion.h1>
             {/* <h1
               className={`text-custom-green text-center font-extrabold md:w-200 lg:text-7xl ${rubikFont.className}`}
             >
               IMSU Chapter
             </h1> */}
-            <p className="w-60 text-center text-white md:w-full md:text-xl">
+            <motion.p
+              className="w-60 text-center text-white md:w-full md:text-xl"
+              initial={{ opacity: 0, y: 20 }}
+              animate={{ opacity: 1, y: 0 }}
+              transition={{ duration: 0.8, ease: "easeIn" }}
+            >
               We are student IT Professionals passionate for groundbreaking
               technology innovations.
-            </p>
+            </motion.p>
           </div>
         </CarouselItem>
-        <CarouselItem className="carouselSlide2 flex h-80 lg:h-100 items-center justify-center md:h-170">
+        <CarouselItem className="carouselSlide2 flex h-70 items-center justify-center md:h-170">
           <div className="flex flex-col items-center justify-center gap-1">
-            <h1
+            <motion.h1
               className={`text-center text-2xl font-extrabold text-white md:w-200 md:text-7xl ${rubikFont.className}`}
+              initial={{ opacity: 0, y: -40 }}
+              animate={{ opacity: 1, y: 0 }}
+              transition={{ duration: 0.8, ease: "easeIn" }}
             >
               Networking The World
-            </h1>
+            </motion.h1>
 
-            <p className="text-center text-white md:text-xl">
+            <motion.p
+              className="text-center text-white md:text-xl"
+              initial={{ opacity: 0, y: 20 }}
+              animate={{ opacity: 1, y: 0 }}
+              transition={{ duration: 0.8, ease: "easeIn" }}
+            >
               We Reinvent; We Optimize; We Build Capacity
-            </p>
+            </motion.p>
           </div>
         </CarouselItem>
       </CarouselContent>

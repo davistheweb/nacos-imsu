@@ -1,4 +1,6 @@
+"use client";
 import { nunitoFont, rubikFont } from "@/lib/font";
+import { motion } from "framer-motion";
 import Image from "next/image";
 import React from "react";
 
@@ -10,7 +12,7 @@ export const ChapterPresidentsCard: React.FC<TChapterPresidentsListProps> = ({
   <div className="scaleIn group/scale px-6">
     <div className="bg-[#eef9ff]">
       <div className="flex flex-col gap-3">
-        <div className="overflow-hidden h-87.5">
+        <div className="h-87.5 overflow-hidden">
           <Image
             src={image}
             alt="avatar"
@@ -18,14 +20,22 @@ export const ChapterPresidentsCard: React.FC<TChapterPresidentsListProps> = ({
           />
         </div>
         <div className="flex flex-col items-center justify-center gap-2 px-4 py-2">
-          <h1
+          <motion.h1
             className={`text-custom-green text-center text-xl font-semibold ${nunitoFont.className}`}
+            initial={{ opacity: 0, y: 40 }}
+            animate={{ opacity: 1, y: 0 }}
+            transition={{ duration: 0.8, ease: "linear" }}
           >
             {name}
-          </h1>
-          <p className={`${rubikFont.className} text-center text-[#6b6a75]`}>
+          </motion.h1>
+          <motion.p
+            className={`${rubikFont.className} text-center text-[#6b6a75]`}
+            initial={{ opacity: 0, y: -40 }}
+            animate={{ opacity: 1, y: 0 }}
+            transition={{ duration: 0.8, ease: "easeIn" }}
+          >
             {timeline}
-          </p>
+          </motion.p>
         </div>
       </div>
     </div>

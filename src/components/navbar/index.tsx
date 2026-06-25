@@ -35,12 +35,10 @@ export const Navbar: React.FC = () => {
   return (
     <>
       <nav
-        className={`transition-top fixed flex w-full items-center justify-between px-8 duration-200 ${isScrolled ? "top-0 bg-white shadow-md" : "top-0 lg:top-9 border-b border-white/20 bg-transparent"} z-50 py-4 md:py-8`}
+        className={`transition-top fixed flex w-full items-center justify-between px-8 duration-200 ${isScrolled ? "top-0 bg-white shadow-md" : "top-0 border-b border-white/20 bg-transparent lg:top-9"} z-50 py-4 md:py-8`}
       >
-        <div className="flex">
-          <Logo
-            textClassName={`${isScrolled ? "text-custom-green" : "text-white"}`}
-          />
+        <div className="flex max-h-17.5">
+          <Logo />
         </div>
 
         <div className="h-ful hidden items-center gap-5 lg:flex">

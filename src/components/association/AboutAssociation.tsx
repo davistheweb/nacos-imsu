@@ -1,20 +1,34 @@
+"use client";
 import { NacosLogo } from "@/assets";
 import { nunitoFont } from "@/lib/font";
+import { motion } from "framer-motion";
 import Image from "next/image";
 import React from "react";
 
 export const AboutAssociation: React.FC = () => (
   <section className="flex flex-col items-center justify-center gap-5 px-10 py-20 lg:flex-row">
     <div className="flex flex-col gap-8 lg:max-w-175">
-      <div className="st-post-run-ani relative flex flex-col gap-2 py-4">
+      <motion.div
+        className="st-post-run-ani relative flex flex-col gap-2 py-4"
+        initial={{ opacity: 0, y: 40 }}
+        whileInView={{ opacity: 1, y: 0 }}
+        viewport={{ once: true }}
+        transition={{ duration: 0.8 }}
+      >
         <h1 className="text-custom-green text-xl font-semibold">ABOUT US</h1>
         <h1
           className={`${nunitoFont.className} text-xl font-extrabold md:text-4xl`}
         >
           An Insight Into One of NACOS' Most Structured Student Bodies
         </h1>
-      </div>
-      <div className="flex flex-col gap-5">
+      </motion.div>
+      <motion.div
+        className="flex flex-col gap-5"
+        initial={{ opacity: 0, y: -40 }}
+        whileInView={{ opacity: 1, y: 0 }}
+        viewport={{ once: true }}
+        transition={{ duration: 0.8 }}
+      >
         <p className="text-[#6b6a75]">
           The Nigeria Association of Computing Students, Imo State University
           Chapter (NACOS-IMSU) is the umbrella body for students studying
@@ -37,7 +51,7 @@ export const AboutAssociation: React.FC = () => (
           members, NACOS IMSU asserts itself as one of the largest and most
           coordinated chapters under NACOS.
         </p>
-      </div>
+      </motion.div>
       {/* <div className="grid w-fit gap-x-10 gap-y-4 sm:grid-cols-2">
         {[
           "Professional Certifications",
@@ -82,11 +96,17 @@ export const AboutAssociation: React.FC = () => (
       </div> */}
     </div>
 
-    <div className="min-w-87.5 lg:min-w-150">
+    <motion.div
+      className="min-w-87.5 lg:min-w-150"
+      initial={{ opacity: 0, y: 40 }}
+      whileInView={{ opacity: 1, y: 0 }}
+      viewport={{ once: true }}
+      transition={{ duration: 0.8 }}
+    >
       <Image
         src={NacosLogo}
         alt="nacos logo"
       />
-    </div>
+    </motion.div>
   </section>
 );

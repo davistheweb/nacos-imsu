@@ -10,11 +10,11 @@ export const ExecutivesListCard: React.FC<TExecutivesCouncilListProps> = ({
   <div className="scaleIn group/scale px-6">
     <div className="overflow-hidden bg-[#eef9ff]">
       <div className="flex flex-col gap-3">
-        <div className="h-87.5 overflow-hidden">
+        <div className="h-110 overflow-hidden">
           <Image
             src={image}
             alt="avatar"
-            className="h-full w-full object-cover transition-all duration-300 ease-in group-hover/scale:scale-105"
+            className="-z-10 h-full object-cover transition-all duration-300 ease-in group-hover/scale:scale-105"
           />
         </div>
 

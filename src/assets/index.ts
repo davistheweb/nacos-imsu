@@ -16,6 +16,8 @@ import ComrNwanagaAugustine from "./about/executives/ComrNwanagaAugustine.jpg";
 import ComrOnyeaghalaEmmanuel from "./about/executives/ComrOnyeaghalaEmmanuel.png";
 import ComrOnyekaBlessing from "./about/executives/ComrOnyekaBlessing.png";
 import NacosImsuLogo from "./general/nacos-imsu_logo.png";
+import NacosImsuLogo_V1 from "./general/nacos_imsu_logoV1.png";
+import NacosImsuLogo_V2 from "./general/nacos_imsu_logoV2.png";
 import NacosLogo from "./general/NacosLogo.jpg";
 export {
   AvatarImage,
@@ -36,5 +38,7 @@ export {
   ComrOnyirioforNzubechi,
   ComrUremegbulemEze,
   NacosImsuLogo,
+  NacosImsuLogo_V1,
+  NacosImsuLogo_V2,
   NacosLogo,
 };

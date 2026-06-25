@@ -1,12 +1,20 @@
+"use client";
 import { NacosLogo } from "@/assets";
 import { nunitoFont } from "@/lib/font";
+import { motion } from "framer-motion";
 import { Check, Phone } from "lucide-react";
 import Image from "next/image";
 import React from "react";
 
 export const About: React.FC = () => (
   <section className="flex flex-col items-center justify-center gap-5 px-10 py-20 lg:flex-row">
-    <div className="flex flex-col gap-8 lg:max-w-175">
+    <motion.div
+      className="flex flex-col gap-8 lg:max-w-175"
+      initial={{ opacity: 0, y: -40 }}
+      whileInView={{ opacity: 1, y: 0 }}
+      viewport={{ once: true }}
+      transition={{ duration: 0.8 }}
+    >
       <div className="st-post-run-ani relative flex flex-col gap-2 py-4">
         <h1 className="text-custom-green text-xl font-semibold">ABOUT US</h1>
         <h1
@@ -16,7 +24,13 @@ export const About: React.FC = () => (
         </h1>
       </div>
       <div className="flex flex-col gap-5">
-        <p className="text-[#6b6a75]">
+        <motion.p
+          className="text-[#6b6a75]"
+          initial={{ opacity: 0, y: 40 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          viewport={{ once: true }}
+          transition={{ duration: 0.8 }}
+        >
           Nigeria Association of Computing Students, Imo State University
           Chapter (NACOS-IMSU) is the umbrella body for students studying
           Computer Science in Imo State University, Owerri. <br /> The
@@ -24,12 +38,18 @@ export const About: React.FC = () => (
           time span NACOS-IMSU has been the bench mark for several technological
           advancement initiatives both within and outside the university
           environment.
-        </p>
-        <p className="text-[#6b6a75]">
+        </motion.p>
+        <motion.p
+          className="text-[#6b6a75]"
+          initial={{ opacity: 0, y: -40 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          viewport={{ once: true }}
+          transition={{ duration: 0.8 }}
+        >
           With a membership strength of about One Thousand (1,000) students,
           NACOS IMSU sits as one of the largest and most organized NACOS
           Chapters both at the South East and National landscape.
-        </p>
+        </motion.p>
       </div>
       <div className="grid w-fit gap-x-10 gap-y-4 sm:grid-cols-2">
         {[
@@ -38,9 +58,12 @@ export const About: React.FC = () => (
           "24/7 Support",
           "Growth",
         ].map((word) => (
-          <div
+          <motion.div
             key={word}
             className="flex items-center gap-4"
+            initial={{ opacity: 0, y: -80 }}
+            animate={{ opacity: 1, y: 0 }}
+            transition={{ duration: 1, ease: "easeIn" }}
           >
             <Check
               color="#138601"
@@ -51,10 +74,15 @@ export const About: React.FC = () => (
             <h4 className={`text-xl font-semibold ${nunitoFont.className}`}>
               {word}
             </h4>
-          </div>
+          </motion.div>
         ))}
       </div>
-      <div className="flex gap-10">
+      <motion.div
+        className="flex gap-10"
+        initial={{ opacity: 0, y: 70 }}
+        animate={{ opacity: 1, y: 0 }}
+        transition={{ duration: 0.8, ease: "easeIn" }}
+      >
         <div className="bg-custom-green flex h-15 w-15 items-center justify-center rounded-sm transition-all duration-500 hover:translate-x-5">
           <Phone
             fill="white"
@@ -72,14 +100,20 @@ export const About: React.FC = () => (
             +234 907 662 6835
           </h3>
         </div>
-      </div>
-    </div>
+      </motion.div>
+    </motion.div>
 
-    <div className="min-w-87.5 lg:min-w-150">
+    <motion.div
+      className="min-w-87.5 lg:min-w-150"
+      initial={{ opacity: 0, left: 40 }}
+      whileInView={{ opacity: 1, y: 0 }}
+      viewport={{ once: true }}
+      transition={{ duration: 0.8 }}
+    >
       <Image
         src={NacosLogo}
         alt="nacos logo"
       />
-    </div>
+    </motion.div>
   </section>
 );
