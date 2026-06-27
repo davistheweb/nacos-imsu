@@ -1,11 +1,13 @@
 import type { Metadata } from "next";
 
 import { Navbar } from "@/components/navbar";
+import Providers from "@/components/providers";
 import { Footer } from "@/components/ui/Footer";
 import { QuickContact } from "@/components/ui/QuickContact";
 import { poppinsFont } from "@/lib/font";
 import { cn } from "@/lib/utils";
 import { Geist } from "next/font/google";
+import { Toaster } from "sonner";
 import "./globals.css";
 
 const geist = Geist({ subsets: ["latin"], variable: "--font-sans" });
@@ -34,7 +36,10 @@ export default function RootLayout({
       <body className="relative flex w-full max-w-506 flex-col items-center justify-center overflow-x-hidden">
         <QuickContact />
         <Navbar />
-        {children}
+        <Providers>
+          {children}
+          <Toaster />
+        </Providers>
         <Footer />
       </body>
     </html>
