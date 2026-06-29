@@ -45,7 +45,7 @@ export function EventsPage() {
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.8, ease: "easeIn" }}
         >
-       Discover upcoimg event for Nacos Imsu Chapter
+       Discover upcoming event for Nacos Imsu Chapter
         </motion.h1>
       </div>
       <div className="mx-auto max-w-6xl">
